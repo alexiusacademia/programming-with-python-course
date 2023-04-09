@@ -32,7 +32,94 @@ now have python interpreter working.
 
 ## Basic Syntax
 
+Let's start with displaying something on the  screen. 
+
+```python
+print("Hello, Python!")
+```
+
+You can try to type this in the interactive python interpreter as shown and it will print on the screen `Hello, Python`.
+
+![hello python using terminal](../images/hello_python.png)
+
+And when using the online interpretter,
+
+![hello python using online interpreter](../images/hello_python_2.png)
+
+If you look on the image above, the source code is the on the left and when you clicked the **Run** button, the result of the program will be displayed on the right.
+
+On the live session or video tutorial, I showed the creation of a source code file which will be run by a terminal command `python <filename>.py` 
+where the `<filename>` is the name of the module. A **module** is a source code file with an extension of `.py`.
+
+Please take note of these terms:
+
++ source code
++ module
++ terminal
++ interpreter
+
+In the previous program, we have used a concept called **function**, and that function's name here is `print`. 
+
+Functions are group of instructions in a programming concept. Here you can create your own functions that does something or outputs something. 
+In this case, the `print` function does something and outputs something in the console/terminal. Functions are called using its name followed by 
+open and close parenthesis, `print("Hello, Python")`. In this example of the function print, we passed something to it of what we called parameter.
+
+Some functions accepts parameters, some doesn't.
+
+In this function, we passed a literal string as parameter.
+
 ## Variables and Data Types
+
+In python, we have various data types and they are shown below:
+
+1. Numeric Types:  
+   a. int  
+   b. float  
+   c. complex
+   
+2. Sequence Types:  
+   a. list  
+   b. tuple  
+   c. range
+   
+3. Text Type:  
+   a. str
+   
+4. Mapping Type:  
+   a. dict
+   
+5. Set Types:  
+   a. set  
+   b. frozenset
+   
+6. Boolean Type:  
+   a. bool
+   
+7. Binary Types:  
+   a. bytes  
+   b. bytearray  
+   c. memoryview
+
+In the previous example code, we have passed a Text Type or `str` for string. A string is python is a set of text or texts that is 
+surrounded by quotation marks (either single or double qoutes). So the following will statements will return the same results:
+
+```python
+print("Hello, Python")
+```
+
+```python
+print('Hello, Python')
+```
+
+The following are the most common data types we'll use in this course are:
+
+- `str` - For string or texts
+- `int` - For integer or whole value numbers
+- `float` - For floating point values or numbers with decimal points
+- `list` - For collection of different values
+- `tuple` - Same as list but immutable
+- `dict` - For mapping or key-value pair
+- `bool` for True or False
 
 ## Type Casting
 
@@ -109,3 +196,7 @@ now have python interpreter working.
 ```python
 global = "Assigning a string to the keyword 'global'"
 ```
+
+You can also query the keywords inside python as shown below:
+
+![keywords](../images/keywords.png)
