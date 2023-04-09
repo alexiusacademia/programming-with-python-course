@@ -1,0 +1,6 @@
+site_name: Programming with Python
+site_url: https://programming-with-python.netlify.app
+nav:
+  - Home: index.md
+  - About: about.md
+theme: mkdocs
