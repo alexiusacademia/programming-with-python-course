@@ -1,0 +1,9 @@
+td.linenos {
+    width: 40px !important;
+    color: red;
+    padding: 0;
+}
+
+td.code {
+    padding: 0;
+}

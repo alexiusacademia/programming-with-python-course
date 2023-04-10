@@ -185,6 +185,14 @@ Notice on the shell that it printed two different types `<class int>` and `<clas
 
 What we used here is a function named `type`. This is an example of a function that returns a string value, the type of the parameter we sent to it.
 
+The following are sample variable assignments:
+
+```py
+name = 'Kristina'
+age = 25
+is_employed = True
+```
+
 ## Type Casting
 
 ## Python Reserved Keywords

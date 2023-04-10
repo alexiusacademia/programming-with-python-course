@@ -15,3 +15,5 @@ markdown_extensions:
       pygments_lang_class: true
       auto_title: true
   - pymdownx.superfences
+extra_css:
+  - css/custom.css
