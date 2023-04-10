@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Collection Types
 
 In this course, we will explore two of the most common collection types, `List` amd `Tuple`.

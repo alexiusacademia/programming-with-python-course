@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Part I - Basic Programming Concepts
 
 

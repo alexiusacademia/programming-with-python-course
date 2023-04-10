@@ -21,3 +21,6 @@ markdown_extensions:
   - pymdownx.superfences
 extra_css:
   - css/custom.css
+theme:
+  name: material
+  custom_dir: overrides/
