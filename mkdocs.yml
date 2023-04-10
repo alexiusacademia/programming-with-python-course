@@ -8,6 +8,7 @@ plugins:
   - timetoread:
       allPages: True
 markdown_extensions:
+  - footnotes
   - pymdownx.highlight:
       use_pygments: true
       linenums: true
