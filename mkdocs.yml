@@ -3,8 +3,15 @@ site_url: https://programming-with-python.netlify.app
 nav:
   - Home: index.md
   - About: about.md
-theme: mkdocs
 plugins:
   - search
   - timetoread:
       allPages: True
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      anchor_linenums: true
+      pygments_lang_class: true
+      auto_title: true
+  - pymdownx.superfences

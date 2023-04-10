@@ -121,6 +121,40 @@ The following are the most common data types we'll use in this course are:
 - `dict` - For mapping or key-value pair
 - `bool` for True or False
 
+Like other programming languages, you have to declare a variable in python before you can use them. A *variable* is a placeholder in memory 
+that holds a literal value.
+
+From the above print statement example, instead of passing the literal to the function directly, we can declare a variable that will 
+hold the greeting `Hello, Python` and then pass that variable to the print function:
+
+```py title="greeting.py" linenums="1"
+# Create a variable named 'greeting'
+greeting = "Hello, Python"
+
+# Pass the variable to the print function
+print(greeting)
+```
+
+After running this program, we can expect to have the same result as the previous ones. Let me discuss the code listing above. You may notice that on the left part of the code block is a list of numbers, these are line numbers. Line numbers represents the number of line of code from the 
+top. Please take note that line numbers also counts the empty spaces (white spaces).
+
+Line 1 and 4 are what we call in programming as comments. Comments are not executed by the interpreter as part of the program. They are there 
+for us humans to see as reference. In the meantime while writing the code, you may say that you don't need to write comments, but you will 
+appreciate it if you are already writing thousands of lines of code, after like three months, you look back at them, you'll be surprised 
+that for some, you have no idea what those code does.
+
+So some part of our codes really needs comments, not just for us, but for those who may read or maintain our codes in the future. 
+
+They say that the best comments are those codes that are self explanatory. Meaning you don't have to put comments on them. The variables and 
+function names can explain themselves. But still, comments are essential if you have something done that are not obvious why you did it.
+
+Now let's proceed with line number 2. Here we declare a variable called `greeting`. We assign the string literal `"Hello, Python"` to it. Note 
+that strings are always surrounded by quotation marks. 
+
+### Variable Declaration
+
+In python, you declare a variable by not stating its type like in any other language, you state its type by assigning value to it.
+
 ## Type Casting
 
 ## Python Reserved Keywords
