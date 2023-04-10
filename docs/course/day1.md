@@ -30,6 +30,8 @@ This is from my terminal, as you may notice, I typed in the command <strong>pyth
 on my system. In your case, you may just enter the command <strong>python</strong>. If you seen the python version you installed, then you 
 now have python interpreter working.
 
+<br />
+
 ## Basic Syntax
 
 Let's start with displaying something on the  screen. 
@@ -67,6 +69,8 @@ open and close parenthesis, `print("Hello, Python")`. In this example of the fun
 Some functions accepts parameters, some doesn't.
 
 In this function, we passed a literal string as parameter.
+
+<br />
 
 ## Variables and Data Types
 
@@ -151,6 +155,8 @@ function names can explain themselves. But still, comments are essential if you 
 Now let's proceed with line number 2. Here we declare a variable called `greeting`. We assign the string literal `"Hello, Python"` to it. Note 
 that strings are always surrounded by quotation marks. 
 
+<br />
+
 ### Variable Declaration
 
 In python, you declare a variable by not stating its type like in any other language, you state its type by assigning value to it. 
@@ -193,7 +199,46 @@ age = 25
 is_employed = True
 ```
 
+<br />
+
 ## Type Casting
+
+Type casting is a concept where in we convert a certain data type to a different ones. 
+
+For example, a string concatenation is a concept of combining strings in programming. An example is this.
+
+```py
+first_name = 'Juan'
+last_name = 'dela Cruz'
+
+# Concatenate
+full_name = first_name + ' ' + last_name
+```
+
+Here, we are combining a total of 3 strings, `first_name`, `' '` and `last_name`. The `' '` is an empty space just to make the 
+full name presentable, separating the first name and last name by a space. 
+
+Now that is okay if the objects[^1] we want to combine are all of string type. However, if we are to a add a different type to the concatenation, 
+we will get an error. 
+
+![concatenation error](../images/concat_error.png)
+
+In the above example, I am trying to make the program display "Kristina is 25 years old.", but instead, the interpreter gives us an error message 
+`TypeError: can only concatenate str (not "int") to str`. This tells us that we cannot combine the `age` which holds an integer to bunch of strings.
+
+If we want to achieve it, we can use type casting to convert the integer type to a string type `str(age)`.
+
+Another thing to note is, on the error message, it shows the line number where the error occurs. In this case, it's line 4 of our source code. 
+Knowing what line on our code the error occurs saves us time in finding it.
+
+To show you the solution, here it is:
+
+![concatenation using casting](../images/concat_solution.png)
+
+I just used the `print` function to show the resulting concatenated string in the output.
+
+
+<br/>
 
 ## Python Reserved Keywords
 
@@ -272,3 +317,5 @@ global = "Assigning a string to the keyword 'global'"
 You can also query the keywords inside python as shown below:
 
 ![keywords](../images/keywords.png)
+
+[^1]: Everything in python are objects including integers, strings, lists, dictionaries, functions, and classes.
