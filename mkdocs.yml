@@ -4,6 +4,7 @@ nav:
   - Home: index.md
   - Course:
       - Day 1 - Basic Concepts: course/day1.md
+      - Day 2 - Collection Types: course/day2.md
   - About: about.md
 plugins:
   - search
