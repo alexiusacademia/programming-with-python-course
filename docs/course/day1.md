@@ -153,7 +153,37 @@ that strings are always surrounded by quotation marks.
 
 ### Variable Declaration
 
-In python, you declare a variable by not stating its type like in any other language, you state its type by assigning value to it.
+In python, you declare a variable by not stating its type like in any other language, you state its type by assigning value to it. 
+The interpreter will then infer its type based on the literal value.
+
+Lets take the following code for example:
+
+```C title="Integer variable declaration in C"
+int main() {
+    int age = 25;
+
+    return 0;
+}
+```
+
+```py title="Integer variable declaration in python"
+age = 25
+```
+
+Notice line 2 in the C source code and line 1 in the python source code.
+
+Also thing to note that python is a **dynamic** language, unlike other languages such as C which are **statically typed** language. Meaning, if 
+you declare a variale in C, its value type cannot be changed, unlike in python.
+
+In the example above, we declare a variable age and assigned a value of type integer to it. After that, we can assign another value type to it 
+and it will still be valid.
+
+![dynamic variables](../images/dynamic_variables.png)
+
+In the image above, we printed the type of age twice. First when we declared it as an integer, second, when we assigned a value of string to it.
+Notice on the shell that it printed two different types `<class int>` and `<class str>`.
+
+What we used here is a function named `type`. This is an example of a function that returns a string value, the type of the parameter we sent to it.
 
 ## Type Casting
 
