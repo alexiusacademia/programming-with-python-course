@@ -3,8 +3,9 @@ site_url: https://programming-with-python.netlify.app
 nav:
   - Home: index.md
   - Course:
-      - Day 1 - Basic Concepts: course/day1.md
-      - Day 2 - Collection Types: course/day2.md
+      - Chapter 1 - Basic Concepts: course/chapter1.md
+      - Chaper 2 - Collection Types: course/chapter2.md
+      - Chapter 3 - Control Flow Statements: course/chapter3.md
   - About: about.md
 plugins:
   - search
