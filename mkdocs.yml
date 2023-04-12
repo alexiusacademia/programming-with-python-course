@@ -4,8 +4,9 @@ nav:
   - Home: index.md
   - Course:
       - Chapter 1 - Basic Concepts: course/chapter1.md
-      - Chaper 2 - Collection Types: course/chapter2.md
+      - Chapter 2 - Collection Types: course/chapter2.md
       - Chapter 3 - Control Flow Statements: course/chapter3.md
+      - Chapter 4 - Functions and Modules: course/chapter4.md
   - About: about.md
 plugins:
   - search
