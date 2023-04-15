@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chapter 4: Functions and Modules
 
 In this chapter, we will cover functions and modules, which allow you to write reusable code and organize your program into smaller, more manageable pieces.

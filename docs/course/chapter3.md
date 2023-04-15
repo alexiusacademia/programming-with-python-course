@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chapter 3: Control Flow Statements
 
 In this chapter, we will cover control flow statements, which allow you to control the execution of your program. Specifically, we will cover if statements, loops, and break and continue statements.
