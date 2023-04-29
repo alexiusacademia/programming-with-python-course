@@ -7,6 +7,7 @@ nav:
       - Chapter 2 - Collection Types: course/chapter2.md
       - Chapter 3 - Control Flow Statements: course/chapter3.md
       - Chapter 4 - Functions and Modules: course/chapter4.md
+      - Chapter 5 - tkinter and Peek of OOP: course/chapter5.md
   - About: about.md
 plugins:
   - search
