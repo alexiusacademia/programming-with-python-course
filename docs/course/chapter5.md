@@ -24,6 +24,13 @@ root.mainloop()
 
 This will output a small window as shown below (the sample screenshot is taken from a macOS).
 
-![tkinter preview blank window](./chapter5//tkinter1.png)
+<p align="center">
+    <img src="./chapter5/tkinter1/tkinter1.png" width="200" alt="tkinter blank window" style="align: center;" />
+</p>
+
+### Listing 1.1 Explanation
+
+On the above code, in line 1, we imported the tkinter library. But instead of just using `import tkinter`, we used `import tkinter as tk`.
+by using `as tk`, we are just assigning the symbol `tkinter` to `tk` variable so that instead of calling `tkinter.Tk()`, we just use `tk.Tk()`.
 
 ## OOP
