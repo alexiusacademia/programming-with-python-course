@@ -25,7 +25,7 @@ root.mainloop()
 This will output a small window as shown below (the sample screenshot is taken from a macOS).
 
 <p align="center">
-    <img src="./chapter5/tkinter1/tkinter1.png" width="200" alt="tkinter blank window" style="align: center;" />
+    <img src="../images/chapter5/tkinter1/tkinter1.png" width="200" alt="tkinter blank window" style="align: center;" />
 </p>
 
 ### Listing 1.1 Explanation
