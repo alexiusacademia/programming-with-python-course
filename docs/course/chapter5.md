@@ -109,3 +109,56 @@ In the above code, when the button is clicked, the program will call the btn_cli
 
 In order to understand the basic usage of properties and methods of an object, which we have used so far, we will be having
 a peek of object oriented programming.
+
+Object-oriented programming (OOP) in Python and other languages is a way of organizing code into classes and objects.
+Classes are blueprints for objects, and objects are instances of classes. OOP makes code more organized, readable, and maintainable.
+
+An object can have properties and methods that we can use to control them.
+
+Let's say for example, we want to have an object `rectangle`. And we want to specify the length and width of it. Additionally,
+we want to calculate the area and perimeter each time the dimensions are updated.
+
+We define a class using `class` keyword.
+
+```py
+class Rectangle:
+    width = 0.0
+    length = 0.0
+
+    def __init__(self, width, length) -> None:
+        self.width = width
+        self.length = length
+
+    def area(self):
+        a = self.width * self.length
+        return a
+
+    def perimeter(self):
+        p = (self.width + self.length) * 2
+        return p
+
+# Create an instance of the Rectangle class
+rectangle = Rectangle(5, 10)
+
+# Print the attributes and computed values
+print(f'The rectangle dimensions are W: {rectangle.width}, L: {rectangle.length}')
+print(f'Area of the rectangle is: {rectangle.area()}')
+print(f'Perimeter of the rectangle is: {rectangle.perimeter()}')
+```
+
+In the code above, our class definition is from line 1 to 15. Line 18 downward is the usage.
+Lines 2 and 3 are not manadatory to be placed there but I find it good to show the reader of the code that there are attributes there instead of just
+the ones in the constructor.
+
+The constructor is a method with this signature `def __init__(self, *args, **kwargs):`. `args` are positional argumets, meaning you put the arguments
+in with strict complicance to order or placement and `kwargs` are keyword arguments where order is not necesarily followed.
+
+In a method argument, the positional arguments with no default values are required during the usage of the method. Meaning, in our example,
+`width` and `length` parameters are required. So if we don't specify them in the initialization, we get an error
+
+![error message when required argument is not specified](./chapter5/class1/error1.png)
+
+The error here is TypeError specifying that there are 2 required positional arguments that are not provided.
+
+In the constructor definition, on line 6 and 7, we set the `self.width` and `self.length` attributes to those that are provided
+in the arguments. `self` in python meaning itself, or in this case, the `rectangle` object.
