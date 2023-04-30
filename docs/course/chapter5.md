@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Chapter 5: tkinter and Peak to OOP
+# Chapter 5: tkinter and Peek to OOP
 
 In this chapter, we will introduce `tkinter`, the default GUI framework for python that is pre-installed in the distribution. For the next sub-chapter, in order to futher understand the usgaes of tkinter and other libraries, `OOP` or object oriented programming will be slightly introduced.
 
@@ -106,3 +106,6 @@ btn_download = tk.Button(root, text='Download', command=btn_clicked)
 In the above code, when the button is clicked, the program will call the btn_clicked function and do the actions inside it.
 
 ## OOP
+
+In order to understand the basic usage of properties and methods of an object, which we have used so far, we will be having
+a peek of object oriented programming.
