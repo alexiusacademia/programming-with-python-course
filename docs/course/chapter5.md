@@ -92,4 +92,17 @@ This tells that our main window owns those widgets.
 
 The named argument `text` for both the Label and the Button is for setting the text of those widgets and the `width` argument for Entry is for the number of characters. If the input characters exceeds this, the text will just be hidden in sight.
 
+In tkinter, there are three geometry management: pack, place and grid. In the example above, we used `pack`. By default, the pack stacks the widgets vertically. We will not be discussing much of these in details in this course.
+
+To add a functionality to our button, we can create a function and then bind it to the widget.
+
+```py
+def btn_clicked():
+    print('The button is clicked')
+
+btn_download = tk.Button(root, text='Download', command=btn_clicked)
+```
+
+In the above code, when the button is clicked, the program will call the btn_clicked function and do the actions inside it.
+
 ## OOP
