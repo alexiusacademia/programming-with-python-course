@@ -9,6 +9,7 @@ nav:
       - Chapter 4 - Functions and Modules: course/chapter4.md
       - Chapter 5 - tkinter and Peek of OOP: course/chapter5.md
       - Chapter 6 - Building a Simple Desktop Youtube Downloader: course/chapter6.md
+      - Activity 1 - Coding Activity: course/activity1.md
   - About: about.md
 plugins:
   - search
