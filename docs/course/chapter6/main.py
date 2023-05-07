@@ -1,8 +1,11 @@
 import tkinter as tk
+from downloader import Downloader
 
 def download():
     url = txt_url.get()
-    print(url)
+    
+    downloader = Downloader(url)
+    downloader.download()
 
 root = tk.Tk()
 root.title('Youtube Downloader')
