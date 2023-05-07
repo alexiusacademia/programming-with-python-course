@@ -39,6 +39,15 @@ fp = 'sample.xyz'
 fp.endswith('xyz') # Returns True
 ```
 
+For the user to select a folder, you will add a menu for the application. Please see the documentation for adding menu at
+
+[https://tkdocs.com/tutorial/menus.html](https://tkdocs.com/tutorial/menus.html) and for a tutorial blog if you get confused
+
+[https://pythonbasics.org/tkinter-menu/](https://pythonbasics.org/tkinter-menu/)
+
+Inside the menu is a menu called 'Select Folder' maybe under 'File' menu. This should open a filde dialog for selecting a folder.
+Look at `tk.filedialog` module. There should be a `filedialog.askdirectory()` method.
+
 Please take note that this exercise will practice you to find and read documentations about the language and tools
 that we will be suing. This is how programming in the real world is done.
 
