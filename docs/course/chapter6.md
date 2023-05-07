@@ -38,4 +38,9 @@ btn_download.pack(pady=5)
 root.mainloop()
 ```
 
-In the listing above, on line
+In the listing above, on line 17, we added the padding for horizontal with `padx` and the `fill='x'` to
+make the entry expand horizontally when the window is resized.
+
+Line 3-5 is a function that we will be dealing with later. For now, it just gets the content of the `txt_url` entry and
+prints it to the console, but later, we will using this to add the logic for the download of the best quality video
+available for the youtube video given.
