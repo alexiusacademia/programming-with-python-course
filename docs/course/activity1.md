@@ -39,4 +39,7 @@ fp = 'sample.xyz'
 fp.endswith('xyz') # Returns True
 ```
 
+Please take note that this exercise will practice you to find and read documentations about the language and tools
+that we will be suing. This is how programming in the real world is done.
+
 For any queries about this activity, post it in the comment below.
