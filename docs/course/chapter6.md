@@ -67,5 +67,93 @@ This will install the `yt-dlp` alongside with other pre-requisite libraries:
 Now let's create a new class in a new file. For this let's call it `downloader.py` or name it anything you want.
 
 ```py title="downloader.py"
+import yt_dlp
+
+class Downloader:
+    def __init__(self, url: str):
+        self.url = url
+
+    def download(self):
+        """
+        Download the video.
+
+        Args:
+            format_id (str): The format id selected.
+        """
+        ydl_opts = {
+            'format': 'best[ext=mp4]/best'
+        }
+
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([self.url])
+```
+
+This class has a constructor that takes url as a required argument so we must pass it
+in the object initialization from our main code like this.
 
 ```
+downloader = Downloader(url)
+```
+
+So now, our download function would be like below:
+
+```
+import tkinter as tk
+from downloader import Downloader
+
+def download():
+    url = txt_url.get()
+
+    downloader = Downloader(url)
+    downloader.download()
+
+####
+####
+```
+
+Our `main.py` now will be
+
+```py title="main.py"
+import tkinter as tk
+from downloader import Downloader
+
+def download():
+    url = txt_url.get()
+
+    downloader = Downloader(url)
+    downloader.download()
+
+root = tk.Tk()
+root.title('Youtube Downloader')
+
+# Define widgets
+lbl_url = tk.Label(root, text='Youtube URL')
+txt_url = tk.Entry(root, width=30)
+btn_download = tk.Button(root, text='Download', command=download)
+
+# Arrange widgets using geometry manager 'pack'
+lbl_url.pack()
+txt_url.pack(padx=10, fill='x')
+btn_download.pack(pady=5)
+
+root.mainloop()
+```
+
+Now you can run the program and paste a youtube url in the entry. Then click on the Download button.
+This will download the video with the best format in your current directory.
+
+In summary, we have tackled the following:
+
+- Created a new class `Downloader`
+- Using the third party package `yt-dlp`
+- Object initialization and usage of the constructor with parameter `downloader = Downloader(url)`
+- We created a method called `download` inside our class for downloading
+
+In the next chapter, we will be using a treeview to display the available video formats
+in a tabulated form so that the user can select (double-click) an item to download, we will also display
+the progress of download in a progress bar with the help of threading for multitasking.
+
+The code for this chapter can be access on this website's repository or you can directly go into this link
+[https://github.com/alexiusacademia/programming-with-python-course/tree/main/docs/course/chapter6](https://github.com/alexiusacademia/programming-with-python-course/tree/main/docs/course/chapter6)
+
+I hope you gained something from this. For any queries, jsut ask in the comment below. Thanks!
