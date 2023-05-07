@@ -44,3 +44,28 @@ make the entry expand horizontally when the window is resized.
 Line 3-5 is a function that we will be dealing with later. For now, it just gets the content of the `txt_url` entry and
 prints it to the console, but later, we will using this to add the logic for the download of the best quality video
 available for the youtube video given.
+
+## The library
+
+In this project, we will be using the `yt-dlp` library. As the other libraries, `pytube` and `youtube-dl` is giving
+some issues, we will be using this one for now.
+
+To install the library:
+
+```
+pip install yt-dlp
+```
+
+This will install the `yt-dlp` alongside with other pre-requisite libraries:
+
+- `Brotli`
+- `certifi`
+- `mutagen`
+- `pycryptodomex`
+- `websockets`
+
+Now let's create a new class in a new file. For this let's call it `downloader.py` or name it anything you want.
+
+```py title="downloader.py"
+
+```
